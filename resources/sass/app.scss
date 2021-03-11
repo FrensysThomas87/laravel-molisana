@@ -1,1 +1,61 @@
-//
+
+@import "variables";
+@import "colors";
+@import "fonts";
+
+// Mixin
+
+@mixin a{
+  color: #000;
+  text-decoration: none;
+}
+
+@mixin centerOrizzontalAbsolute {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin li{
+  display: inline-block;
+  padding-right: 20px;
+  list-style: none;
+}
+
+//End Mixin
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+//header
+header{
+  height: 300px;
+  background-color: $headerBgColor;
+  padding-top: 30px;
+  text-align: $txtCenter;
+  position: relative;
+
+  ul{
+    position: absolute;
+    bottom: 0;
+    @include centerOrizzontalAbsolute;
+    a{
+      @include a;
+      li{
+        @include li;
+
+        padding: 20px 5px;
+        font-size: $headerLiFontSize;
+
+        &:hover{
+          background-color: $headerLiBgColor;
+        }
+      }
+    }
+
+  }
+}
+
+//end header

@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 300px;
+  background-color: #fff;
+  padding-top: 30px;
+  text-align: center;
+  position: relative;
+}
+header ul {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+header ul a {
+  color: #000;
+  text-decoration: none;
+}
+header ul a li {
+  display: inline-block;
+  padding-right: 20px;
+  list-style: none;
+  padding: 20px 5px;
+  font-size: 30px;
+}
+header ul a li:hover {
+  background-color: #B2E5FC;
+}
