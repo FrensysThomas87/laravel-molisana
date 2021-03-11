@@ -62,21 +62,23 @@ header{
 
 // main
 main{
-
-  display: $flex;
-  flex-wrap: wrap;
   padding: 50px 150px 20px 150px;
-  width: 100%;
 
-  .title-pasta{
-    margin: 5px;
-    width: calc(100% / 3 - 10px);
-    a{
-      >img{
-        width: 100%;
+  .kind-pasta-container{
+    display: $flex;
+    flex-wrap: wrap;
+    
+    .title-pasta{
+      margin: 5px;
+      width: calc(100% / 3 - 10px);
+      a{
+        >img{
+          width: 100%;
+        }
       }
-    }
 
+    }
   }
+
 }
 // end main
