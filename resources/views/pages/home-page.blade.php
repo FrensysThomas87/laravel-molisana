@@ -138,31 +138,15 @@ $array = json_decode($data, true);
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
   </head>
   <body>
-    <header>
-      <img src="https://www.lamolisana.it/wp-content/uploads/2020/04/marchio-sito-test.png" alt="">
-      <nav>
-        <ul>
-          <a href="#">
-            <li>Home</li>
-          </a>
+    @include('partials.header')
 
-          <a href="#">
-            <li>Prodotti</li>
-          </a>
-
-          <a href="#">
-            <li>News</li>
-          </a>
-        </ul>
-      </nav>
-    </header>
-@foreach ($array as $key => $pasta)
+    @foreach ($array as $key => $pasta)
     <a href="/product-details/{{$key}}">
       <div class="">
         Titolo : {{$pasta['titolo']}} <br/><br/>
 
       </div>
     </a>
-@endforeach
+    @endforeach
   </body>
 </html>
