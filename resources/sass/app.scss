@@ -41,7 +41,7 @@ header{
     position: absolute;
     bottom: 0;
     @include centerOrizzontalAbsolute;
-    a{
+    >a{
       @include a;
       li{
         @include li;
@@ -59,3 +59,24 @@ header{
 }
 
 //end header
+
+// main
+main{
+
+  display: $flex;
+  flex-wrap: wrap;
+  padding: 50px 150px 20px 150px;
+  width: 100%;
+
+  .title-pasta{
+    margin: 5px;
+    width: calc(100% / 3 - 10px);
+    a{
+      >img{
+        width: 100%;
+      }
+    }
+
+  }
+}
+// end main

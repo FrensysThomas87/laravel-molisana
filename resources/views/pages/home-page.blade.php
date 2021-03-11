@@ -140,13 +140,17 @@ $array = json_decode($data, true);
   <body>
     @include('partials.header')
 
-    @foreach ($array as $key => $pasta)
-    <a href="/product-details/{{$key}}">
-      <div class="">
-        Titolo : {{$pasta['titolo']}} <br/><br/>
+    <main>
+      @foreach ($array as $key => $pasta)
 
-      </div>
-    </a>
-    @endforeach
+        <div class="title-pasta">
+          <a href="/product-details/{{$key}}">
+            <img src="{{$pasta['src']}}" alt="">
+          </a>
+        </div>
+
+      @endforeach
+    </main>
+
   </body>
 </html>
