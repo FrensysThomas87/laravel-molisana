@@ -17,7 +17,6 @@
 
 @mixin li{
   display: inline-block;
-  padding-right: 20px;
   list-style: none;
 }
 
@@ -45,6 +44,7 @@ header{
       @include a;
       li{
         @include li;
+        padding-right: 20px;
 
         padding: 20px 5px;
         font-size: $headerLiFontSize;
@@ -62,20 +62,17 @@ header{
 
 // main
 main{
-  padding: 50px 150px 20px 150px;
+  padding: 100px 300px 40px 300px;
   background-image: url('/../img/fondo-slide-classiche.jpg');
 
   >h1{
-
+    margin: 10px 0;
+    color: $pastaKindColor;
   }
 
   .kind-pasta-container{
     display: $flex;
     flex-wrap: wrap;
-
-
-
-
 
     .img-pasta{
       margin: 5px;
@@ -85,9 +82,67 @@ main{
           width: 100%;
         }
       }
+    }
+  }
+}
+// end main
 
+// footer
+footer{
+  height: 850px;
+  background-color: #fff;
+  padding: 50px 300px 100px 300px;
+  display: $flex;
+  position: relative;
+  background-image: url('https://www.lamolisana.it/wp-content/uploads/2020/06/footer-montagne-bottom.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+
+
+
+
+  .footer-contacts{
+
+    >p{
+      margin-bottom: 5px;
+      color: $footerParagrapsColor;
     }
   }
 
+
+.footer-element-container{
+  display: $flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  &:nth-of-type(2) h2{
+    margin: 15px 0;
+  }
+
+  .footer-element{
+    margin: 20px;
+    width: calc(100% / 2 - 160px);
+
+
+
+    &:first-child{
+      margin-left: 80px;
+      }
+
+      >h2{
+        margin-bottom: 15px;
+        color: $footerParagrapsColor;
+      }
+
+      >li{
+        list-style: none;
+        margin-bottom: 7px;
+        color: $footerParagrapsColor;
+        font-size: $footerLiFontSize;
+        cursor: pointer;
+      }
+    }
+  }
 }
-// end main
+// end footer
