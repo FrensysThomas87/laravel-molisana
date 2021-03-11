@@ -63,12 +63,21 @@ header{
 // main
 main{
   padding: 50px 150px 20px 150px;
+  background-image: url('/../img/fondo-slide-classiche.jpg');
+
+  >h1{
+
+  }
 
   .kind-pasta-container{
     display: $flex;
     flex-wrap: wrap;
-    
-    .title-pasta{
+
+
+
+
+
+    .img-pasta{
       margin: 5px;
       width: calc(100% / 3 - 10px);
       a{

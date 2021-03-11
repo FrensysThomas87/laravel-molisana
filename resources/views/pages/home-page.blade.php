@@ -147,17 +147,35 @@ $array = json_decode($data, true);
       <h1>LE LUNGHE</h1>
       <div class="kind-pasta-container">
         @foreach ($array as $key => $pasta)
-          @if ($loop -> index === 5)
-            @break
+          @if ($pasta['tipo'] === 'lunga')
+            <div class="img-pasta">
+              <a href="/product-details/{{$key}}">
+                <img src="{{$pasta['src']}}" alt="">
+              </a>
+            </div>
           @endif
-        <div class="title-pasta">
-          <a href="/product-details/{{$key}}">
-            <img src="{{$pasta['src']}}" alt="">
-          </a>
-        </div>
         @endforeach
-      </div>
 
+        <h1>LE CORTE</h1>
+        <div class="kind-pasta-container">
+          @foreach ($array as $key => $pasta)
+            @if ($pasta['tipo'] === 'corta')
+              <div class="img-pasta">
+                <a href="/product-details/{{$key}}">
+                  <img src="{{$pasta['src']}}" alt="">
+                </a>
+              </div>
+            @endif
+          @endforeach
+
+
+
+
+
+
+
+
+      </div>
 
 
 

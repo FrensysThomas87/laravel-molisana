@@ -34,15 +34,16 @@ header ul > a li:hover {
 
 main {
   padding: 50px 150px 20px 150px;
+  background-image: url("/../img/fondo-slide-classiche.jpg");
 }
 main .kind-pasta-container {
   display: flex;
   flex-wrap: wrap;
 }
-main .kind-pasta-container .title-pasta {
+main .kind-pasta-container .img-pasta {
   margin: 5px;
   width: calc(100% / 3 - 10px);
 }
-main .kind-pasta-container .title-pasta a > img {
+main .kind-pasta-container .img-pasta a > img {
   width: 100%;
 }
