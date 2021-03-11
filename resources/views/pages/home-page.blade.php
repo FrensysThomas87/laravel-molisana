@@ -139,9 +139,9 @@ $array = json_decode($data, true);
   <body>
 @foreach ($array as $key => $pasta)
     <a href="#">
-      <div class="">aasasdsdsd
+      <div class="">
         Titolo : {{$pasta['titolo']}} <br/><br/>
-        Descrizione :  {{$pasta['descrizione']}}<br/><br/><br/>
+
       </div>
     </a>
 @endforeach
