@@ -21,6 +21,6 @@ Route::get('/home', function () {
     return view('pages.home-page');
 });
 
-Route::get('/product-details', function () {
-    return view('pages.product-details');
+Route::get('/product-details/{id}', function ($id) {
+    return view('pages.product-details',['idProduct' => $id]);
 });

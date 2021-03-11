@@ -138,7 +138,7 @@ $array = json_decode($data, true);
   </head>
   <body>
 @foreach ($array as $key => $pasta)
-    <a href="#">
+    <a href="/product-details/{{$key}}">
       <div class="">
         Titolo : {{$pasta['titolo']}} <br/><br/>
 
