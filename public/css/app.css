@@ -53,7 +53,7 @@ main .kind-pasta-container .img-pasta a > img {
 }
 
 footer {
-  height: 850px;
+  height: 800px;
   background-color: #fff;
   padding: 50px 300px 100px 300px;
   display: flex;
@@ -95,19 +95,26 @@ footer .footer-element-container .footer-element > li {
 }
 
 #product-main {
+  background-color: #B7DAE5;
   background-image: url("");
   width: 100%;
   height: 100%;
-  padding: 0;
+  padding: 50px 50px 100px 50px;
   position: relative;
 }
-#product-main h1 {
+#product-main > h1 {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
 }
 #product-main > img {
   width: 100%;
-  height: 100%;
   margin-top: -10px;
+}
+#product-main > p {
+  position: absolute;
+  bottom: 10px;
+  padding: 0 50px 10px 50px;
+  color: #002D73;
+  font-size: 20px;
 }

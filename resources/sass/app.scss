@@ -67,7 +67,7 @@ main{
 
   >h1{
     margin: 10px 0;
-    color: $pastaKindColor;
+    color: $darkBlue;
   }
 
   .kind-pasta-container{
@@ -91,7 +91,7 @@ main{
 
 // footer
 footer{
-  height: 850px;
+  height: 800px;
   background-color: #fff;
   padding: 50px 300px 100px 300px;
   display: $flex;
@@ -154,21 +154,30 @@ footer{
 
 //main
 #product-main{
+  background-color: $bgColorImgProduct;
   background-image: url('');
   width: 100%;
   height: 100%;
-  padding: 0;
+  padding: 50px 50px 100px 50px;
   position: relative;
 
-  h1{
+  >h1{
     position: absolute;
     @include centerOrizzontalAbsolute;
   }
 
   >img{
     width: 100%;
-    height: 100%;
+
     margin-top: -10px;
+  }
+
+  >p{
+    position: absolute;
+    bottom: 10px;
+    padding: 0 50px 10px 50px;
+    color: $darkBlue;
+    font-size: $productDescriptionFSize;
   }
 }
 //end main
