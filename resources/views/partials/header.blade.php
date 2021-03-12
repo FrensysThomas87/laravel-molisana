@@ -6,7 +6,7 @@
         <li>Home</li>
       </a>
 
-      <a href="#">
+      <a href="/product-details/1">
         <li>Prodotti</li>
       </a>
 
