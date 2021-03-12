@@ -203,11 +203,12 @@ footer{
         font-size: $chevronFontSize;
         margin-top: 20px;
 
+        &:hover{
+          color: #000;
+        }
+
       }
     }
-
-
-
   }
 
   .chevron-left{

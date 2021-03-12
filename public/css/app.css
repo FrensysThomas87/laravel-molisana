@@ -137,6 +137,10 @@ footer .footer-element-container .footer-element > li {
   font-size: 70px;
   margin-top: 20px;
 }
+#product-main .chevron-left a > i:hover,
+#product-main .chevron-right a > i:hover {
+  color: #000;
+}
 #product-main .chevron-left {
   left: 0;
 }
