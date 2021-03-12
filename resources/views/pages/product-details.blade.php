@@ -21,6 +21,12 @@
         <img src={{$pastaArray[$idProduct - 1]['src-h']}} alt="">
         <img src={{$pastaArray[$idProduct - 1]['src-p']}} alt="">
         <p>{!!$pastaArray[$idProduct - 1]['descrizione']!!}</p>
+        <div class="chevron-left">
+          <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="chevron-right">
+          <i class="fas fa-chevron-right"></i>
+        </div>
       </main>
 
 

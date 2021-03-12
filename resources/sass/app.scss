@@ -15,6 +15,19 @@
   transform: translateX(-50%);
 }
 
+@mixin chevron{
+  top:50%;
+  transform: translateY(-50%);
+  position: absolute;
+  padding: 20px 15px;
+  background-color: $chevronBgColor;
+  color: #fff;
+  cursor: pointer;
+  width: 80px;
+  height: 150px;
+  border-radius: 4px;
+}
+
 @mixin li{
   display: inline-block;
   list-style: none;
@@ -179,5 +192,29 @@ footer{
     color: $darkBlue;
     font-size: $productDescriptionFSize;
   }
+
+  .chevron-left,
+  .chevron-right{
+    @include chevron;
+
+
+    >i{
+      color: #fff;
+      font-size: $chevronFontSize;
+      margin-top: 20px;
+
+    }
+  }
+
+  .chevron-left{
+    left: 0;
+    }
+
+
+  .chevron-right{
+    right: 0;
+  }
+
 }
-//end main
+
+// end main

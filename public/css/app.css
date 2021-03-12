@@ -118,3 +118,28 @@ footer .footer-element-container .footer-element > li {
   color: #002D73;
   font-size: 20px;
 }
+#product-main .chevron-left,
+#product-main .chevron-right {
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  padding: 20px 15px;
+  background-color: #DCEDF2;
+  color: #fff;
+  cursor: pointer;
+  width: 80px;
+  height: 150px;
+  border-radius: 4px;
+}
+#product-main .chevron-left > i,
+#product-main .chevron-right > i {
+  color: #fff;
+  font-size: 70px;
+  margin-top: 20px;
+}
+#product-main .chevron-left {
+  left: 0;
+}
+#product-main .chevron-right {
+  right: 0;
+}
