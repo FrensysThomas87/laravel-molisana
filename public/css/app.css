@@ -131,8 +131,8 @@ footer .footer-element-container .footer-element > li {
   height: 150px;
   border-radius: 4px;
 }
-#product-main .chevron-left > i,
-#product-main .chevron-right > i {
+#product-main .chevron-left a > i,
+#product-main .chevron-right a > i {
   color: #fff;
   font-size: 70px;
   margin-top: 20px;

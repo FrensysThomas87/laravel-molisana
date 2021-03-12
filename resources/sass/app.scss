@@ -197,13 +197,17 @@ footer{
   .chevron-right{
     @include chevron;
 
+    a{
+      >i{
+        color: #fff;
+        font-size: $chevronFontSize;
+        margin-top: 20px;
 
-    >i{
-      color: #fff;
-      font-size: $chevronFontSize;
-      margin-top: 20px;
-
+      }
     }
+
+
+
   }
 
   .chevron-left{

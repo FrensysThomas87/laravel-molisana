@@ -24,9 +24,21 @@
         <div class="chevron-left">
           <i class="fas fa-chevron-left"></i>
         </div>
+
+
         <div class="chevron-right">
+          @if ($idProduct == count($pastaArray))
+          <a href="/product-details/1">
+            @else
+              <a href="/product-details/{{$idProduct + 1}}">
+          @endif
           <i class="fas fa-chevron-right"></i>
+          </a>
         </div>
+
+
+
+
       </main>
 
 
