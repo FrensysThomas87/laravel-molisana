@@ -21,8 +21,15 @@
         <img src={{$pastaArray[$idProduct - 1]['src-h']}} alt="">
         <img src={{$pastaArray[$idProduct - 1]['src-p']}} alt="">
         <p>{!!$pastaArray[$idProduct - 1]['descrizione']!!}</p>
+
         <div class="chevron-left">
+          @if ($idProduct == 1)
+            <a href="/product-details/{{$idProduct = count($pastaArray)}}">
+            @else
+              <a href="/product-details/{{$idProduct - 1}}">
+          @endif
           <i class="fas fa-chevron-left"></i>
+          </a>
         </div>
 
 
