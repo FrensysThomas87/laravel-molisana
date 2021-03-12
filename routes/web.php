@@ -17,10 +17,20 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+
+
 Route::get('/home', function () {
-    return view('pages.home-page');
+  $pasta = config('pasta');
+    return view('pages.home-page',[
+      'pastaArray' => $pasta
+    ]);
 });
 
-Route::get('/product-details/{id}', function ($id) {
-    return view('pages.product-details',['idProduct' => $id]);
+Route::get('/product-details/{id?}', function ($id=null) {
+  if(empty($id)){
+    return redirect('/home');
+  }
+    $pasta = config('pasta');
+    return view('pages.product-details',['idProduct' => $id], ['pastaArray' => $pasta]);
 });
