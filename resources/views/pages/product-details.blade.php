@@ -35,6 +35,7 @@
 
         <div class="chevron-right">
           @if ($idProduct == count($pastaArray))
+            
           <a href="/product-details/1">
             @else
               <a href="/product-details/{{$idProduct + 1}}">

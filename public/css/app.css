@@ -36,6 +36,11 @@ main {
   padding: 100px 300px 40px 300px;
   background-image: url("/../img/fondo-slide-classiche.jpg");
 }
+@media screen and (max-width: 981px) {
+  main {
+    padding: 50px;
+  }
+}
 main > h1 {
   margin: 10px 0;
   color: #002D73;
@@ -48,12 +53,17 @@ main .kind-pasta-container .img-pasta {
   margin: 5px;
   width: calc(100% / 3 - 10px);
 }
+@media screen and (max-width: 981px) {
+  main .kind-pasta-container .img-pasta {
+    margin: 5px;
+    width: calc(100% / 2 - 10px);
+  }
+}
 main .kind-pasta-container .img-pasta a > img {
   width: 100%;
 }
 
 footer {
-  height: 800px;
   background-color: #fff;
   padding: 50px 300px 100px 300px;
   display: flex;
@@ -62,6 +72,12 @@ footer {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
+}
+@media screen and (max-width: 981px) {
+  footer {
+    display: block;
+    padding: 50px 0 20px 80px;
+  }
 }
 footer .footer-contacts > p {
   margin-bottom: 5px;
@@ -72,6 +88,11 @@ footer .footer-element-container {
   flex-wrap: wrap;
   width: 100%;
 }
+@media screen and (max-width: 981px) {
+  footer .footer-element-container {
+    display: block;
+  }
+}
 footer .footer-element-container:nth-of-type(2) h2 {
   margin: 15px 0;
 }
@@ -79,8 +100,19 @@ footer .footer-element-container .footer-element {
   margin: 20px;
   width: calc(100% / 2 - 160px);
 }
+@media screen and (max-width: 981px) {
+  footer .footer-element-container .footer-element {
+    margin: 0;
+    width: 100%;
+  }
+}
 footer .footer-element-container .footer-element:first-child {
   margin-left: 80px;
+}
+@media screen and (max-width: 981px) {
+  footer .footer-element-container .footer-element:first-child {
+    margin: 0;
+  }
 }
 footer .footer-element-container .footer-element > h2 {
   margin-bottom: 15px;
@@ -112,8 +144,11 @@ footer .footer-element-container .footer-element > li {
   margin-top: -10px;
 }
 #product-main > p {
-  position: absolute;
-  bottom: 10px;
+  padding: 0 50px 10px 50px;
+  color: #002D73;
+  font-size: 20px;
+}
+#product-main > p > ol {
   padding: 0 50px 10px 50px;
   color: #002D73;
   font-size: 20px;
