@@ -52,6 +52,18 @@ main .kind-pasta-container .img-pasta a > img {
   width: 100%;
 }
 
+#product-main {
+  background-image: url("");
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+#product-main > img {
+  width: 100%;
+  height: 100%;
+  margin-top: -10px;
+}
+
 footer {
   height: 850px;
   background-color: #fff;
