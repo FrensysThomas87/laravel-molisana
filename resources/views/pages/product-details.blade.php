@@ -25,9 +25,9 @@
 
         <div class="chevron-left">
           @if ($idProduct == 1)
-            <a href="/product-details/{{$idProduct = count($pastaArray)}}">
+            <a href="/product-details/{{count($pastaArray)}}">
             @else
-              <a href="/product-details/{{$idProduct - 1}}">
+            <a href="/product-details/{{$idProduct - 1}}">
           @endif
           <i class="fas fa-chevron-left"></i>
           </a>
@@ -36,10 +36,10 @@
 
         <div class="chevron-right">
           @if ($idProduct == count($pastaArray))
-
-          <a href="/product-details/1">
-            @else
+            <a href="/product-details/1">
+          @else
               <a href="/product-details/{{$idProduct + 1}}">
+
           @endif
           <i class="fas fa-chevron-right"></i>
           </a>
