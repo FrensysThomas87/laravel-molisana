@@ -58,6 +58,11 @@ main {
     padding: 50px;
   }
 }
+@media screen and (min-width: 981px) and (max-width: 1442px) {
+  main {
+    padding: 50px;
+  }
+}
 main > h1 {
   margin: 10px 0;
   color: #002D73;
@@ -171,8 +176,10 @@ footer .footer-element-container .footer-element > li {
   background-image: url("");
   width: 100%;
   height: 100%;
-  padding: 50px 50px 100px 50px;
+  padding: 50px 100px 100px 100px;
   position: relative;
+  color: #002D73;
+  font-size: 20px;
 }
 #product-main > h1 {
   position: absolute;
@@ -189,12 +196,8 @@ footer .footer-element-container .footer-element > li {
   margin-top: -10px;
 }
 #product-main > p {
-  padding: 0 50px 10px 50px;
-  color: #002D73;
-  font-size: 20px;
-}
-#product-main > p > ol {
-  padding: 0 50px 10px 50px;
+  margin-left: -50px;
+  padding-bottom: 20px;
   color: #002D73;
   font-size: 20px;
 }
