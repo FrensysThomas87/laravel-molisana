@@ -4,7 +4,7 @@
   <i class="fas fa-bars"></i>
   <nav>
     <ul>
-      <a href="/home">
+      <a href="/">
         <li>Home</li>
       </a>
 
