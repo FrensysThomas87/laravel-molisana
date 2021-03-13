@@ -178,11 +178,21 @@ footer{
   }
 
   .footer-element{
-    margin: 20px;
-    width: calc(100% / 2 - 160px);
+    margin-left: 120px;
+    width: calc(100% / 2 - 80);
 
     @media screen and(max-width:1422px){
+      width:100%;
       margin-left: 80px;
+    }
+
+    @media screen and (min-width:1423px) and (max-width: 1558px){
+      width:100%;
+      margin-left: 82px;
+    }
+
+    @media screen and(max-width:$tablet){
+      margin: 0;
       width:100%;
     }
 
@@ -190,6 +200,12 @@ footer{
 
     &:first-child{
       margin-left: 80px;
+
+      @media screen and(max-width:$tablet){
+        margin-left: 0;
+        width:100%;
+      }
+
 
       @media screen and(max-width:$tablet){
         margin: 0;
