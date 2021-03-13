@@ -8,6 +8,7 @@
     <meta charset="utf-8">
     <title>Laravel Molisana</title>
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
   </head>
   <body>
     {{-- header --}}

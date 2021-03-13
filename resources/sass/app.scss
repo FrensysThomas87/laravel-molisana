@@ -49,10 +49,26 @@ header{
   text-align: $txtCenter;
   position: relative;
 
+  .fas.fa-bars{
+    display:none;
+
+    @media screen and(max-width:981px){
+      display: block;
+      margin-top: 60px;
+      font-size: $barsIconFontSize;
+      color: $darkBlue;
+      cursor: pointer;
+    }
+  }
+
   ul{
     position: absolute;
     bottom: 0;
     @include centerOrizzontalAbsolute;
+
+    @media screen and(max-width:981px){
+      display: none;
+    }
     >a{
       @include a;
       li{
@@ -134,11 +150,11 @@ footer{
 
 
   .footer-contacts{
-
-
     >p{
       margin-bottom: 5px;
       color: $footerParagrapsColor;
+
+  
     }
   }
 
@@ -150,7 +166,6 @@ footer{
 
 
       @media screen and(max-width:981px){
-
         display: block;
       }
 
@@ -189,6 +204,9 @@ footer{
         color: $footerParagrapsColor;
         font-size: $footerLiFontSize;
         cursor: pointer;
+
+
+
       }
     }
   }

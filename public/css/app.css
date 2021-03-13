@@ -11,11 +11,28 @@ header {
   text-align: center;
   position: relative;
 }
+header .fas.fa-bars {
+  display: none;
+}
+@media screen and (max-width: 981px) {
+  header .fas.fa-bars {
+    display: block;
+    margin-top: 60px;
+    font-size: 40px;
+    color: #002D73;
+    cursor: pointer;
+  }
+}
 header ul {
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+}
+@media screen and (max-width: 981px) {
+  header ul {
+    display: none;
+  }
 }
 header ul > a {
   color: #000;
