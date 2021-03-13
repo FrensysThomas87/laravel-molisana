@@ -161,6 +161,11 @@ footer .footer-element-container .footer-element > li {
   left: 50%;
   transform: translateX(-50%);
 }
+@media screen and (max-width: 665px) {
+  #product-main > h1 {
+    font-size: 18px;
+  }
+}
 #product-main > img {
   width: 100%;
   margin-top: -10px;

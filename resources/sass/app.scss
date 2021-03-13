@@ -229,9 +229,16 @@ footer{
   padding: 50px 50px 100px 50px;
   position: relative;
 
+
+
   >h1{
     position: absolute;
     @include centerOrizzontalAbsolute;
+
+    @media screen and(max-width:665px){
+      font-size: $titleProductSmartphoneFontSize;
+
+      }
   }
 
   >img{
