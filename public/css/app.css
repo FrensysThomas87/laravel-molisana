@@ -76,6 +76,11 @@ main .kind-pasta-container .img-pasta {
     width: calc(100% / 2 - 10px);
   }
 }
+@media screen and (max-width: 768px) {
+  main .kind-pasta-container .img-pasta {
+    width: 100%;
+  }
+}
 main .kind-pasta-container .img-pasta a > img {
   width: 100%;
 }

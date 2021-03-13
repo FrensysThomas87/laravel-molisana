@@ -9,6 +9,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
   </head>
@@ -35,7 +36,7 @@
 
         <div class="chevron-right">
           @if ($idProduct == count($pastaArray))
-            
+
           <a href="/product-details/1">
             @else
               <a href="/product-details/{{$idProduct + 1}}">
