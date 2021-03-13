@@ -122,9 +122,9 @@ footer .footer-element-container .footer-element {
   margin: 20px;
   width: calc(100% / 2 - 160px);
 }
-@media screen and (max-width: 981px) {
+@media screen and (max-width: 1422px) {
   footer .footer-element-container .footer-element {
-    margin: 0;
+    margin-left: 80px;
     width: 100%;
   }
 }

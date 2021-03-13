@@ -181,8 +181,8 @@ footer{
     margin: 20px;
     width: calc(100% / 2 - 160px);
 
-    @media screen and(max-width:$tablet){
-      margin: 0;
+    @media screen and(max-width:1422px){
+      margin-left: 80px;
       width:100%;
     }
 
