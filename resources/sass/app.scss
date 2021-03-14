@@ -146,6 +146,11 @@ footer{
   background-position: bottom;
   background-size: contain;
 
+  @media screen and(max-width: $smartphone){
+    font-size: $productDescriptionFSizeSmartphone;
+    padding: 0 30px;
+  }
+
 
 
 
@@ -254,6 +259,10 @@ footer{
     padding: 50px 90px;
   }
 
+  @media screen and(max-width: $smartphone){
+    font-size: $productDescriptionFSizeSmartphone;
+  }
+
 
 
   >h1{
@@ -278,9 +287,7 @@ footer{
     color: $darkBlue;
     font-size: $productDescriptionFSize;
 
-    @media screen and(max-width: $smartphone){
-      font-size: $productDescriptionFSizeSmartphone;
-    }
+
 }
 
   .chevron-left,

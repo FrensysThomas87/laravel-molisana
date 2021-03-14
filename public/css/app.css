@@ -100,6 +100,12 @@ footer {
   background-position: bottom;
   background-size: contain;
 }
+@media screen and (max-width: 768px) {
+  footer {
+    font-size: 15px;
+    padding: 0 30px;
+  }
+}
 @media screen and (max-width: 981px) {
   footer {
     display: block;
@@ -186,6 +192,11 @@ footer .footer-element-container .footer-element > li {
     padding: 50px 90px;
   }
 }
+@media screen and (max-width: 768px) {
+  #product-main {
+    font-size: 15px;
+  }
+}
 #product-main > h1 {
   position: absolute;
   left: 50%;
@@ -206,11 +217,6 @@ footer .footer-element-container .footer-element > li {
   padding-bottom: 20px;
   color: #002D73;
   font-size: 20px;
-}
-@media screen and (max-width: 768px) {
-  #product-main > p {
-    font-size: 15px;
-  }
 }
 #product-main .chevron-left,
 #product-main .chevron-right {
