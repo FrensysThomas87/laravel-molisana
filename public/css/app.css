@@ -181,6 +181,11 @@ footer .footer-element-container .footer-element > li {
   color: #002D73;
   font-size: 20px;
 }
+@media screen and (max-width: 768px) {
+  #product-main {
+    padding: 50px 90px;
+  }
+}
 #product-main > h1 {
   position: absolute;
   left: 50%;
@@ -189,6 +194,7 @@ footer .footer-element-container .footer-element > li {
 @media screen and (max-width: 665px) {
   #product-main > h1 {
     font-size: 18px;
+    top: 20px;
   }
 }
 #product-main > img {
@@ -200,6 +206,11 @@ footer .footer-element-container .footer-element > li {
   padding-bottom: 20px;
   color: #002D73;
   font-size: 20px;
+}
+@media screen and (max-width: 768px) {
+  #product-main > p {
+    font-size: 15px;
+  }
 }
 #product-main .chevron-left,
 #product-main .chevron-right {
@@ -220,6 +231,13 @@ footer .footer-element-container .footer-element > li {
   font-size: 70px;
   margin-top: 20px;
 }
+@media screen and (max-width: 981px) {
+  #product-main .chevron-left a > i,
+#product-main .chevron-right a > i {
+    font-size: 25px;
+    color: #002D73;
+  }
+}
 #product-main .chevron-left a > i:hover,
 #product-main .chevron-right a > i:hover {
   color: #000;
@@ -229,4 +247,10 @@ footer .footer-element-container .footer-element > li {
 }
 #product-main .chevron-right {
   right: 0;
+}
+@media screen and (max-width: 981px) {
+  #product-main .chevron-left,
+#product-main .chevron-right {
+    background-color: transparent;
+  }
 }

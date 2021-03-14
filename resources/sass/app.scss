@@ -250,6 +250,10 @@ footer{
   color: $darkBlue;
   font-size: 20px;
 
+  @media screen and(max-width: $smartphone){
+    padding: 50px 90px;
+  }
+
 
 
   >h1{
@@ -258,13 +262,13 @@ footer{
 
     @media screen and(max-width:665px){
       font-size: $titleProductSmartphoneFontSize;
+      top:20px;
 
       }
   }
 
   >img{
     width: 100%;
-
     margin-top: -10px;
   }
 
@@ -273,6 +277,10 @@ footer{
     padding-bottom: 20px;
     color: $darkBlue;
     font-size: $productDescriptionFSize;
+
+    @media screen and(max-width: $smartphone){
+      font-size: $productDescriptionFSizeSmartphone;
+    }
 }
 
   .chevron-left,
@@ -285,6 +293,12 @@ footer{
         font-size: $chevronFontSize;
         margin-top: 20px;
 
+        @media screen and(max-width:$tablet ){
+          font-size: 25px;
+          color: $darkBlue;
+
+        }
+
         &:hover{
           color: #000;
         }
@@ -295,11 +309,19 @@ footer{
 
   .chevron-left{
     left: 0;
-    }
+}
 
 
   .chevron-right{
     right: 0;
+  }
+
+  .chevron-left,
+  .chevron-right{
+
+    @media screen and(max-width:$tablet ){
+      background-color:transparent;
+    }
   }
 
 }
