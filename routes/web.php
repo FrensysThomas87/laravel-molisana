@@ -27,6 +27,17 @@ Route::get('/', function () {
     ]);
 });
 
+Route::get('/prova1', function () {
+
+    return view('prove-yields.pagina-prova');
+});
+
+
+Route::get('/prova2', function () {
+
+    return view('prove-yields.prova-2');
+});
+
 Route::get('/product-details/{id?}', function ($id=null) {
   if(empty($id)){
     return redirect('/');
